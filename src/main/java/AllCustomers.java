@@ -19,6 +19,7 @@ public class AllCustomers {
         return listOfCustomers;
     }
     public List<Customer>  getListOfCustomers() {
+
         if (! customersLoaded){
             loadAsCustomers();
         }

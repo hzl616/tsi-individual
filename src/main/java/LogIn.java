@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class LogIn {
     private Scanner userInput = new Scanner(System.in);
 
+
     private String input(String message) {
         System.out.println(message);
         return userInput.nextLine();
@@ -22,16 +23,18 @@ public class LogIn {
     }
 
     public void logIn() {
-        String emailAddress = input("Enter email address");
+        String emailAddress = input("Enter email address: ");
         String password = getPassword(emailAddress);
         if (password == "") {
-            System.out.println("You are not a user");
+            System.out.println("Email not found. Please enter a valid address");
+            //added recursive action to prompt email continuously if incorrect supplied
+            logIn();
         }
-        else if (password.equals(input("Enter password"))){
-            System.out.println("You are logged in");
+        else if (password.equals(input("Enter password: "))){
+            System.out.println("Log in success");
         }
         else {
-            System.out.println("Wrong password, no second chances");
+            System.out.println("Access denied");
         }
     }
 

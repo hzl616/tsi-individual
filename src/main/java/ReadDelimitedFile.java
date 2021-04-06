@@ -4,13 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ReadDelimitedFile {
+public class ReadDelimitedFile implements ReadFile {
 
     private String fileDelimitor = ",";
     private String filePathPrefix = "src/main/resources/";
 
+    public ReadDelimitedFile() {
+
+    }
+
     public void setFileDelimitor(String fileDelimitor){
         this.fileDelimitor = fileDelimitor;
+    }
+
+    @Override
+    public List<String[]> getFileData() {
+        return null;
     }
 
     public List<String[]> getFileData(String fileName){

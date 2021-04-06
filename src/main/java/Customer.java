@@ -5,7 +5,7 @@ public class Customer {
     private String password;
     final public static String dataSourceName = "customer";
 
-    public Customer(String emailAddress, String firstName, String lastName, String password){
+    public Customer(String emailAddress, String firstName, String lastName, String password) {
         this.emailAddress = emailAddress;
         this.firstName = firstName;
         this.lastName = lastName;
