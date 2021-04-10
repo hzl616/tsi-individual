@@ -8,9 +8,14 @@ public class ReadDelimitedFile implements ReadFile {
 
     private String fileDelimitor = ",";
     private String filePathPrefix = "src/main/resources/";
+    private String fullPath;
 
     public ReadDelimitedFile() {
 
+    }
+
+    public ReadDelimitedFile(String fileName) {
+        fullPath = filePathPrefix + fileName;
     }
 
     public void setFileDelimitor(String fileDelimitor){

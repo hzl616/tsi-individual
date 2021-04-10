@@ -3,11 +3,22 @@ import java.util.Scanner;
 
 public class LogIn {
     private Scanner userInput = new Scanner(System.in);
+    private FileLogger fileLoggerActual;
+    private ReadFile readDelimitedFile;
 
+    public LogIn() {
+
+    }
 
     private String input(String message) {
         System.out.println(message);
         return userInput.nextLine();
+    }
+
+    public LogIn(String fileName) {
+        readDelimitedFile = new ReadDelimitedFile(fileName);
+        fileLoggerActual = new FileLoggerActual(fileName) {
+        };
     }
 
     private String getPassword(String emailAddress){

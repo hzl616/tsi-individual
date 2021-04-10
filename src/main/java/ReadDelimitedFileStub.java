@@ -5,7 +5,8 @@ public class ReadDelimitedFileStub implements ReadFile {
 
     @Override
     public List<String[]> getFileData() {
-        return getFileData("stub");
+
+        return getFileData("stubUser");
     }
 
     @Override

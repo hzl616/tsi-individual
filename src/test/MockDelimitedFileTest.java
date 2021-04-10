@@ -16,6 +16,6 @@ class MockDelimitedFileTest {
        };
         mockData.add(row1);
         ReadDelimitedFile readDelimitedFileMock = spy(ReadDelimitedFile.class);
-        when(readDelimitedFileMock.getFileData("customers.csv")).thenReturn(mockData);
+        when(readDelimitedFileMock.getFileData("customer.csv")).thenReturn(mockData);
     }
 }

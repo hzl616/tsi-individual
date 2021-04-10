@@ -3,6 +3,7 @@ public class Customer {
     private String lastName;
     private String emailAddress;
     private String password;
+
     final public static String dataSourceName = "customer";
 
     public Customer(String emailAddress, String firstName, String lastName, String password) {
@@ -12,16 +13,32 @@ public class Customer {
         this.password = password;
     }
 
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+
+    public void setFirstName(String Firstname) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String Lastname) {
+        this.lastName = lastName;
+    }
+
+    public void setPassword (String password) {
+        this.password = password;
+    }
+
+    public String getEmailAddress(){
+        return this.emailAddress;
+    }
+
     public String getFirstName(){
         return this.firstName;
     }
 
     public String getLastName(){
         return this.lastName;
-    }
-
-    public String getEmailAddress(){
-        return this.emailAddress;
     }
 
     public String getPassword(){

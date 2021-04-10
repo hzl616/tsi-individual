@@ -5,23 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2371ede6-29e5-4958-a88c-840585f0205b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/AllCustomersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/CustomerLoginSuccessTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/MockDelimitedFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/ReadDelimitedFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/StubDelimitedFileTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSimpleCustomer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AllCustomers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AllCustomers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FileLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FileLoggerActual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/testCustomer.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogIn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ReadDelimitedFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadDelimitedFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/customer.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AllCustomers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AllCustomers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogIn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ReadDelimitedFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ReadDelimitedFile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/customer.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReadDelimitedFileStub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReadDelimitedFileStub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/MockDelimitedFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/MockDelimitedFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/StubDelimitedFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/StubDelimitedFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ReadDelimitedFileStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ReadDelimitedFileStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StubDelimitedFileTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StubDelimitedFileTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +29,18 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="1qRBMUuXOllrgMDAFQqRyPeNKld" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,7 +53,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -75,6 +74,17 @@
     <configuration name="LogIn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LogIn" />
       <module name="JavaSimpleCustomer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,6 +120,11 @@
       <workItem from="1617227525521" duration="6601000" />
       <workItem from="1617274683190" duration="4966000" />
       <workItem from="1617319744637" duration="5216000" />
+      <workItem from="1617710425164" duration="1868000" />
+      <workItem from="1617715095702" duration="2622000" />
+      <workItem from="1617883727304" duration="2059000" />
+      <workItem from="1617886259619" duration="5011000" />
+      <workItem from="1618004605711" duration="7086000" />
     </task>
     <servers />
   </component>
@@ -133,7 +148,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ReadDelimitedFile.java</url>
-          <line>33</line>
+          <line>38</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
