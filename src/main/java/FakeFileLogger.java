@@ -14,6 +14,15 @@ public class FakeFileLogger implements FileLogger {
         this.fullPath = filePath + fileName;
     }
 
+    public FakeFileLogger() {
+
+    }
+
+
+    public List<String> getFileData() {
+        return fileData;
+    }
+
     @Override
     public void write(String writeMessage) {
         fileData.add(writeMessage);
@@ -31,7 +40,5 @@ public class FakeFileLogger implements FileLogger {
 
     }
 
-    public List<String> getFileData() {
-        return fileData;
-    }
+
 }

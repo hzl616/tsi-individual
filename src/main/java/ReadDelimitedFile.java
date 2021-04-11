@@ -18,10 +18,6 @@ public class ReadDelimitedFile implements ReadFile {
         fullPath = filePathPrefix + fileName;
     }
 
-    public void setFileDelimitor(String fileDelimitor){
-        this.fileDelimitor = fileDelimitor;
-    }
-
     @Override
     public List<String[]> getFileData() {
         return null;
@@ -42,5 +38,14 @@ public class ReadDelimitedFile implements ReadFile {
             e.printStackTrace();
         }
         return fileData;
+    }
+    @Override
+    public void setFileDelimitor(String fileDelimitor){
+        this.fileDelimitor = fileDelimitor;
+    }
+
+    @Override
+    public void setFilePath(String filePath) {
+
     }
 }

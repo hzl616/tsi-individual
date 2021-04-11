@@ -1,10 +1,7 @@
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class FileLoggerActual implements FileLogger {
-
-    private String fileName;
     private String filePath = "src/main/resources";
 
     public FileLoggerActual(){
@@ -12,7 +9,6 @@ public class FileLoggerActual implements FileLogger {
     }
 
     public FileLoggerActual (String fileName){
-        this.fileName = fileName;
     }
 
     @Override
@@ -27,7 +23,6 @@ public class FileLoggerActual implements FileLogger {
 
     @Override
     public void setFileName(String fileName) {
-        this.fileName = fileName;
 
     }
 

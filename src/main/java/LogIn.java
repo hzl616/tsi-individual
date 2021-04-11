@@ -5,9 +5,16 @@ public class LogIn {
     private Scanner userInput = new Scanner(System.in);
     private FileLogger fileLoggerActual;
     private ReadFile readDelimitedFile;
+    private Customer customer;
+    private FileLogger fileLogger;
 
     public LogIn() {
+        
+    }
 
+
+    public void setFileLogger (FileLogger fileLogger){
+        this.fileLogger = fileLogger;
     }
 
     private String input(String message) {
@@ -33,24 +40,23 @@ public class LogIn {
         return password;
     }
 
+
     public void logIn() {
         String emailAddress = input("Enter email address: ");
         String password = getPassword(emailAddress);
         if (password == "") {
             System.out.println("Email not found. Please enter a valid address");
-            //added recursive action to prompt email continuously if incorrect supplied
+            //add recursive action to prompt email input continuously if email not found
             logIn();
         }
         else if (password.equals(input("Enter password: "))){
-            System.out.println("Log in success");
+            System.out.println("Log in success! Welcome");
         }
         else {
-            System.out.println("Access denied");
+            System.out.println("Access denied - Incorrect password");
         }
     }
 
-    public static void main(String[] args){
-        LogIn logIn = new LogIn();
-        logIn.logIn();
+    public void logIn(String expectedCustomerEmail, String expectedCustomerPassword) {
     }
 }

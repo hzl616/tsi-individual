@@ -17,14 +17,6 @@ public class Customer {
         this.emailAddress = emailAddress;
     }
 
-    public void setFirstName(String Firstname) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String Lastname) {
-        this.lastName = lastName;
-    }
-
     public void setPassword (String password) {
         this.password = password;
     }
@@ -33,19 +25,8 @@ public class Customer {
         return this.emailAddress;
     }
 
-    public String getFirstName(){
-        return this.firstName;
-    }
-
-    public String getLastName(){
-        return this.lastName;
-    }
-
     public String getPassword(){
         return this.password;
     }
 
-    public String getName(){
-        return this.firstName + " " + this.lastName;
-    }
 }

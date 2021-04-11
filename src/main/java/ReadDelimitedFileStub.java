@@ -5,7 +5,6 @@ public class ReadDelimitedFileStub implements ReadFile {
 
     @Override
     public List<String[]> getFileData() {
-
         return getFileData("stubUser");
     }
 
@@ -24,9 +23,14 @@ public class ReadDelimitedFileStub implements ReadFile {
 
         return fileData;
     }
+
 @Override
     public void setFileDelimitor(String fileDelimitor){
 
     }
 
+    @Override
+    public void setFilePath(String filePath) {
+
+    }
 }

@@ -4,6 +4,24 @@ import java.util.List;
 public class AllCustomers {
     private List<Customer> listOfCustomers = new ArrayList<Customer>();
     private boolean customersLoaded = false;
+    private ReadFile readFile;
+    private FileLogger fileLogger;
+
+    public AllCustomers(){
+
+    }
+
+    public void setReadDelimitedFile(ReadFile readFile) {
+        this.readFile = readFile;
+    }
+
+    public void setFileLogger (FileLogger fileLogger){
+        this.fileLogger = fileLogger;
+    }
+
+    public List<String[]> loadCustomerData() {
+        return readFile.getFileData();
+    }
 
     private List<String[]> loadRawCustomers(){
         ReadDelimitedFile readDelimitedFile = new ReadDelimitedFile();
@@ -25,6 +43,5 @@ public class AllCustomers {
         }
         return listOfCustomers;
     }
-
 
 }
